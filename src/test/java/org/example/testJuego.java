@@ -18,7 +18,7 @@ public class testJuego {
     @Order(1)
     @DisplayName("Test Juego Constructor")
     void testConstructor() {
-        Juego juego = new Juego("BloodBorne", PLAYSTATION, 29.99f);
+        Juego juego = new Juego("BloodBorne",PLAYSTATION, 29.99f);
         Assertions.assertAll(
                 () -> assertEquals("BloodBorne", juego.getTitle()),
                 () -> assertEquals(PLAYSTATION, juego.getConsoles()),

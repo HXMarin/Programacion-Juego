@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Game-Programming" />
         <module name="Ejercicio Alumnos Bien Con Test" />
         <module name="Juego" />
       </profile>
