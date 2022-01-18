@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.MethodOrderer.*;
 import org.junit.jupiter.api.DisplayName;
 import static org.example.models.Consolas.*;
 
+
 @DisplayName("Test del Juego")
 @TestMethodOrder(OrderAnnotation.class)
 
@@ -45,12 +46,7 @@ public class testJuego {
     @Test
     void testSetPrice() {
         juego.setPrice(29.99f);
-        assertEquals(29.99f, juego.getPrice());
-    }
-
-    @Test
-    void testSetPriceExceptions() {
-
+        assertEquals(29.99f,juego.getPrice());
     }
     @Test
     void TestGetConsole(){

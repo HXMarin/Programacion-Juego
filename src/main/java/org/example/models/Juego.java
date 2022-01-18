@@ -1,6 +1,8 @@
 package org.example.models;
 
 import java.util.Locale;
+import java.util.Scanner;
+import org.example.models.Consolas;
 
 public class Juego {
 final float MIN_PRICE = 0.00f;
@@ -35,7 +37,7 @@ setTitle(title);
 
     public void setPrice(float price) {
         if (price < MIN_PRICE || price > MAX_PRICE) {
-            throw new IllegalArgumentException(String.format("El Precio tiene que estar entre %2g y %2g",MIN_PRICE,MAX_PRICE));
+            throw new IllegalStateException(String.format("El Precio tiene que estar entre %.2f y %.2f",MIN_PRICE,MAX_PRICE));
         }else{
             this.price = price;
         }
@@ -48,6 +50,7 @@ setTitle(title);
     public void setConsoles(Consolas consoles) {
         this.consoles = consoles;
     }
+
 }
 
 
